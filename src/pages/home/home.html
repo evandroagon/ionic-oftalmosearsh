@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      OftalmoSearsh - Medicos 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding  class="bg-image">
+  <ion-list>
+  
+      <div padding>
+      <h5> Menu Mapas</h5>
+    <button ion-item *ngFor="let page of pages" (click)="openPage(page)">
+      {{ page.title }}
+    </button>
+      </div>
+    <div padding>
+       <button ion-button block color="primary" (click)="chamarHomeContact()">
+      Cadastrar Médicos
+    </button>
+
+  </div>
+    <div padding>
+        <button ion-button block color="primary" (click)="signOut()">
+      Sair da conta 
+    </button>
+    </div>
+  </ion-list>
+</ion-content>
